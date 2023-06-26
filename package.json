@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/BadrAlmadhi/SVG-Logo-Maker#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "@types/jest": "^29.5.1"
   }
 }
