@@ -13,3 +13,7 @@ function writeToFile(fileName, data) {
     });
 }
 
+function Addfile(){
+    console.log('Hello')
+}
+
