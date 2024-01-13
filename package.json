@@ -1,24 +1,18 @@
 {
   "name": "svg-logo-maker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This application was build to create a simple logos for clients. This logo maker was created by using Node.js command-line prompt to make the user select a color and shape. Also, the user has the choice to provide a text for the logo and save the generated SVG to a .svg file",
   "main": "index.js",
   "scripts": {
+    "start": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BadrAlmadhi/SVG-Logo-Maker.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BadrAlmadhi/SVG-Logo-Maker/issues"
-  },
-  "homepage": "https://github.com/BadrAlmadhi/SVG-Logo-Maker#readme",
   "dependencies": {
+    "@types/inquirer": "^9.0.7",
     "inquirer": "^8.2.4",
-    "@types/jest": "^29.5.1"
+    "jest": "^29.7.0"
   }
 }

@@ -1,19 +1,32 @@
-const inquirer = require("inquirer");
-const filesystem = require('./node_modules/graceful-fs/graceful-fs');
-const { Circle, Square, Triangle } = require('./lib/shapes');
+// this folder is for classes
+// create .svg file
+// enter text 3 no more than 3 characters
+// enter text color
+// select shape circle, square, triangle
+// shape color
 
 
-function writeToFile(fileName, data) {
-    console.log("Writing [" + data + "] to file [" + fileName + "]")
-    filesystem.writeFile(fileName, data, function (err) {
-        if (err) {
-            return console.log(err);
-        }
-        console.log("Congratulations, you have Generated a logo.svg!");
-    });
+const inquire = require("inquirer");
+
+class Questions {
+    constructor(name, text, shape, shapeColor){
+
+        this.name = '';
+        this.text = text;
+        this.shape = shape;
+        this.shapeColor = shapeColor
+        
+    }
+    addName() {
+        return inquire
+        .prompt ([
+            {
+                type:'input', 
+                name:'name',
+                message:'Enter your logo text. (please note; logo should not contain more than three characters)',
+            }
+        ]).then(
+            
+        )
+    }
 }
-
-function Addfile(){
-    console.log('Hello')
-}
-
