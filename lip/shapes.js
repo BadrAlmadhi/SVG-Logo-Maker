@@ -1,22 +1,24 @@
 class Shapes {
-  constructor(name) {
-    this.name = name;
+  constructor() {
+    this.color='';
+  }
+  setColor(color){
+    this.color = color;
   }
 }
 
 class Square extends Shapes {
-  constructor(name, square) {
-    super(name);
-    this.square = square;
-  }
-}
+    render(){
+        return `<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="${this.color}" />`
+    };
+  };
+
 
 class Triangle extends Shapes {
-  constructor(name, triangle) {
-    super(name);
-    this.triangle = triangle;
-  }
-}
+  render(){
+``
+  };
+  };
 
 class Circle extends Shapes {
   constructor(name, circle) {
@@ -25,16 +27,21 @@ class Circle extends Shapes {
   }
 }
 
-// render() and then test return SVG file with the givin shape color
-
-const shape = new Triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-
-console.log(shape);
 
 
-// in lip folder handling user input, writing to file, writing test
+// // render() and then test return SVG file with the givin shape color
 
-// writing text in SVG 
-<text x="10" y="10">Hello World!</text>
+// const shape = new Triangle();
+// shape.setColor("blue");
+// expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+
+// console.log(shape);
+
+console.log('hello')
+
+// // in lip folder handling user input, writing to file, writing test
+
+// // writing text in SVG 
+// <text x="10" y="10">Hello World!</text>
+
+
