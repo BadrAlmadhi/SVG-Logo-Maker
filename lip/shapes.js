@@ -1,47 +1,30 @@
 class Shapes {
   constructor() {
-    this.color='';
+    this.color = "";
   }
   setColor(color){
-    this.color = color;
+    this.color=(color);
   }
+
+
 }
 
-class Square extends Shapes {
-    render(){
-        return `<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="${this.color}" />`
-    };
-  };
+class Circle extends Shapes {
+ render(){
+  return `<circle cx="50%" cy="50%" r="100" height="100%" width="100%" fill="${this.color}">`;
+ };
+};
 
+class Square extends Shapes {
+  render(){
+    return `<rect x="50" height="200" width="200" fill="${this.color}">`;
+  }
+}
 
 class Triangle extends Shapes {
   render(){
-``
-  };
-  };
-
-class Circle extends Shapes {
-  constructor(name, circle) {
-    super(name);
-    this.circle = circle;
+    return `<polygon height="100%" width="100%" points="0,200 300,200 150,0" fill="${this.color}">`;
   }
 }
 
-
-
-// // render() and then test return SVG file with the givin shape color
-
-// const shape = new Triangle();
-// shape.setColor("blue");
-// expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-
-// console.log(shape);
-
-console.log('hello')
-
-// // in lip folder handling user input, writing to file, writing test
-
-// // writing text in SVG 
-// <text x="10" y="10">Hello World!</text>
-
-
+module.exports = {Circle, Square, Triangle};
