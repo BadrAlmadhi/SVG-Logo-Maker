@@ -11,13 +11,13 @@ const { Circle, Square, Triangle } = require("./lip/shapes");
 
 class Svg {
   constructor() {
-    this.name = "";
     this.text = "";
-    this.shape = null;
+    this.shape = "";
+  
   }
 
   render() {
-    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.text}${this.shape}</svg>`;
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.shape}${this.text}</svg>`;
   }
 
   setText(text, color) {

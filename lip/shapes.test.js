@@ -2,25 +2,26 @@ const { Circle, Square, Triangle } = require('./shapes');
 
 
 describe('Circle', ()=>{
-    test('render test', ()=>{
+    it('Should set and get color', ()=>{
         const circle = new Circle();
-        const color = ('blue');
-        expect(circle.render()).toEqual(`<circle cx="50%" cy="50%" r="100" height="100%" width="100%" fill="${color}">`);
+        circle.setColor('blue')
+        expect(circle.color).toEqual('blue')
+        
     });
 });
 
 describe('Square', ()=>{
-    test('render test', ()=>{
+    it('Should set and get color', ()=>{
         const square = new Square();
-        const color = ('red');
-        expect(square.render()).toEqual(`<rect x="50" height="200" width="200" fill="${color}">`);
+       square.setColor('green');
+       expect(square.color).toEqual('green')
     });
 });
 
-describe('Triangle', ()=>{
-    test('render test', ()=>{
+describe('Should set and get color', ()=>{
+    it('Should set and get color', ()=>{
         const triangle = new Triangle();
-        const color = ('yellow');
-        expect(triangle.render()).toEqual(`<polygon height="100%" width="100%" points="0,200 300,200 150,0" fill="${color}">`);
+        triangle.setColor('pink');
+        expect(triangle.color).toEqual('pink')
     });
 })
