@@ -76,7 +76,7 @@ class Svg {
   }
 
   createFile() {
-    fs.writeFileSync("shapes.svg", this.render());
+    fs.writeFile("shapes.svg", this.render());
     console.log("File shapes.svg created successfully");
   }
 }
